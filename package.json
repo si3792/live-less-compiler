@@ -1,0 +1,22 @@
+{
+  "name": "live-less-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/si3792/live-less-compiler.git"
+  },
+  "author": "Simo Iliev <simo.t.iliev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/si3792/live-less-compiler/issues"
+  },
+  "homepage": "https://github.com/si3792/live-less-compiler#readme",
+  "dependencies": {
+    "chokidar": "^1.6.1"
+  }
+}
