@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/si3792/live-less-compiler#readme",
   "dependencies": {
-    "chokidar": "^1.6.1"
+    "chokidar": "^1.6.1",
+    "less-plugin-autoprefix": "^1.5.1"
   }
 }

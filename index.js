@@ -9,8 +9,16 @@ var root = process.cwd();
 var onChange = function(f) {
     if (typeof f !== 'string') return;
 
-    exec('lessc ' + f + ' > ' + convertExtensionToCSS(f), function() {});
-    console.log( (new Date()).toLocaleTimeString() + ' -- COMPILED -- ' + f);
+    exec('lessc  ' + f + '  > ' + convertExtensionToCSS(f), function(error, output, outputerr) {
+
+      if(error != null) {
+        console.log('######## ' + (new Date()).toLocaleTimeString() + ' -- ERROR --   ' + f);
+        console.log(outputerr);
+      } else {
+          console.log("######## " + (new Date()).toLocaleTimeString() + ' -- COMPILED -- ' + f);
+       }
+
+    });
 };
 
 
