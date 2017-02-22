@@ -9,7 +9,7 @@ var root = process.cwd();
 var onChange = function(f) {
     if (typeof f !== 'string') return;
 
-    exec('lessc  ' + f + '  > ' + convertExtensionToCSS(f), function(error, output, outputerr) {
+    exec('lessc  ' + f + ' --autoprefix="last 2 versions,> 5%,Firefox >= 20,iOS 7" > ' + convertExtensionToCSS(f), function(error, output, outputerr) {
 
       if(error != null) {
         console.log('######## ' + (new Date()).toLocaleTimeString() + ' -- ERROR --   ' + f);
